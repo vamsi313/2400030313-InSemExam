@@ -1,0 +1,108 @@
+.app {
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 18px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(90deg, #ffffffcc, #f8fbff);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  text-align: center;
+  margin-bottom: 18px;
+}
+.hero h1 { margin: 0; font-size: 24px; }
+.subtitle { margin: 6px 0 0; color: #546178; }
+
+/* Controls: buttons and dropdown */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.cat-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #eef2f6;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.cat-btn:hover { transform: translateY(-2px); }
+.cat-btn.active {
+  background: linear-gradient(90deg,#147efb,#0b75e6);
+  color: white;
+  box-shadow: 0 6px 12px rgba(11,117,230,0.18);
+}
+
+/* Dropdown */
+.dropdown { display: flex; gap: 8px; align-items: center; }
+select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: white;
+}
+
+/* Summary text */
+.summary { margin-bottom: 12px; color: #334155; }
+
+/* Grid of cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 12px rgba(15,23,42,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-top { margin-bottom: 10px; }
+.product-name { font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+.product-category { font-size: 13px; color: #64748b; }
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-price { font-weight: 700; color: #0b6b30; }
+
+/* Buy button */
+.buy-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#06b6d4,#3b82f6);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.buy-btn:hover { transform: translateY(-2px); }
+
+/* No data */
+.no-data { color: #b91c1c; margin-top: 12px; text-align: center; }
+
+/* Footer with required student details */
+.footer {
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  color: #334155;
+  background: linear-gradient(90deg,#f8fafc,#ffffff);
+  border: 1px solid #e6eef9;
+  font-size: 15px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.03);
+}
+.made-by { font-weight: 600; color: #0b3b70; }
