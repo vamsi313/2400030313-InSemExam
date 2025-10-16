@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-/*
-  Predefined products array (name, price, category)
-  ✅ Satisfies: Display a list of products from a predefined array
-*/
+
 const PRODUCTS = [
   // Stationery
   { id: 1, name: "Notebook", price: 40, category: "Stationery" },
@@ -62,7 +59,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="hero">
-        <h1>🛍️ Product List with Category Filter</h1>
+        <h1> Product List with Category Filter</h1>
         <p className="subtitle">Select a category using buttons or dropdown</p>
       </header>
 
