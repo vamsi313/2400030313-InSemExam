@@ -46,7 +46,7 @@ const PRODUCTS = [
 ];
 
 export default function App() {
-  // ✅ useState manages selected category
+  
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   //  build category list + "All"
