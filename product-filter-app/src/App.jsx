@@ -49,10 +49,10 @@ export default function App() {
   // ✅ useState manages selected category
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // ✅ build category list + "All"
+  //  build category list + "All"
   const categories = ["All", ...Array.from(new Set(PRODUCTS.map(p => p.category)))];
 
-  // ✅ filter dynamically based on category
+  // filter dynamically based on category
   const filteredProducts =
     selectedCategory === "All" ? PRODUCTS : PRODUCTS.filter(p => p.category === selectedCategory);
 
